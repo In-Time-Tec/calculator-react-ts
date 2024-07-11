@@ -20,30 +20,7 @@ export const App: FunctionComponent = () => {
   const [display, setDisplay] = useState<string>('0')
 
   const calculate = (rightOperand: number, pendingOperator: Operator): boolean => {
-    let newResult = result
-
-    switch (pendingOperator) {
-      case '+':
-        newResult += rightOperand
-        break
-      case '-':
-        newResult -= rightOperand
-        break
-      case '×':
-        newResult *= rightOperand
-        break
-      case '÷':
-        if (rightOperand === 0) {
-          return false
-        }
-
-        newResult /= rightOperand
-    }
-
-    setResult(newResult)
-    setDisplay(newResult.toString().toString().slice(0, 12))
-
-    return true
+    // IMPLEMENT CALCULATION LOGIC
   }
 
   // Pad buttons handlers

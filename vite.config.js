@@ -13,7 +13,9 @@ export default defineConfig({
       }
     }
   } ,
-  plugins: [react()],
+  plugins: [react({
+    jsxRuntime: 'classic' // Add this line
+  })],
   test: {
     globals: true,
     environment: 'jsdom',

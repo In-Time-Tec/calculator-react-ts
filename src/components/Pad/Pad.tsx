@@ -95,7 +95,7 @@ export const Pad: FunctionComponent<PadProps> = ({
       <Button onClick={onChangeSignButtonClick}>
         -/+
       </Button>
-      <Button color="dark" onClick={() => onOperatorButtonClick('÷')}>
+      <Button color="dark" onClick={() => onOperatorButtonClick('×')}>
         ÷
       </Button>
       <Button onClick={() => onDigitButtonClick(7)}>
@@ -107,7 +107,7 @@ export const Pad: FunctionComponent<PadProps> = ({
       <Button onClick={() => onDigitButtonClick(9)}>
         9
       </Button>
-      <Button color="dark" onClick={() => onOperatorButtonClick('×')}>
+      <Button color="dark" onClick={() => onOperatorButtonClick('÷')}>
         ×
       </Button>
       <Button onClick={() => onDigitButtonClick(4)}>
